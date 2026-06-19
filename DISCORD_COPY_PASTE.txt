@@ -1,50 +1,11 @@
-## AuraTracker
+https://github.com/MordWraith/AuraTracker
 
-**Author:** Skrip (GameHelper2 port: MordWraith)  
-**Source:** https://github.com/MordWraith/AuraTracker  
-**Upstream:** https://github.com/derekShaheen/AuraTracker  
-**Compatible with:** [Gordin/GameHelper2](https://github.com/Gordin/GameHelper2) `main`, **.NET 10** (`net10.0-windows`, x64). Works on maintained community forks on the same API/target.
+GameHelper2 nearby-enemy panel: HP/ES bars, buff/debuff icons per target, per-enemy DPS and optional total DPS header, draggable layout and filters. Based on Skrip's AuraTracker (derekShaheen upstream); GameHelper2 port with DE/EN settings UI by MordWraith. Read-only overlay — no input automation.
 
-### What it does (PoE2)
+Build from source only (no prebuilt DLL). Clone into Plugins/AuraTracker inside your GameHelper2 tree, then dotnet build GameHelper and the plugin. Enable it under GameHelper -> Plugins.
 
-**Nearby enemy tracker** panel for GameHelper:
+Compatible with Gordin GameHelper2 main, .NET 10 (net10.0-windows, x64). Tested on upstream main @ 4f6fd2a (June 2026); should work on community forks using the same API.
 
-- HP / ES bars for monsters near you
-- Buff / debuff icons per target (configurable limit)
-- **DPS** per enemy and optional **total DPS** header
-- Draggable panel, fonts, filters — German/English settings UI in this fork
+Feedback / feature requests: this thread. Crashes or install issues: #help with tag plugin.
 
-Read-only overlay — no input automation.
-
-### Install (source only — no prebuilt DLL)
-
-1. Clone [GameHelper2](https://github.com/Gordin/GameHelper2)
-2. Clone this plugin into `Plugins/AuraTracker`:
-   ```
-   git clone https://github.com/MordWraith/AuraTracker.git Plugins/AuraTracker
-   ```
-3. Build:
-   ```
-   dotnet build GameHelper/GameHelper.csproj -c Release
-   dotnet build Plugins/AuraTracker/AuraTracker.csproj -c Release
-   ```
-4. Enable **AuraTracker** in GameHelper → Plugins
-
-Full README: https://github.com/MordWraith/AuraTracker
-
-### Config folder
-
-- `config/AuraTracker.settings.json` — panel layout, colors, DPS options
-
-### v1.0.0
-
-- Initial GameHelper2 community release (fork port, DE/EN settings)
-
-### Support
-
-- Feedback / feature requests: **this thread**
-- Crashes / GameHelper install issues: `#help` with tag **`plugin`**
-
-### Disclaimer
-
-Community third-party plugin. Use at your own risk. Not affiliated with GGG. Only install from trusted sources.
+Community third-party plugin, not affiliated with GGG. Use at your own risk; only build from the linked source.
