@@ -9,7 +9,7 @@ Community plugin for [GameHelper2](https://github.com/Gordin/GameHelper2) (Path 
 - Lists nearby monsters with life/energy shield bars
 - Buff/debuff icons per enemy (configurable max count)
 - **DPS tracking** (smoothing, overall DPS header)
-- Draggable panel, background, fonts, filters — settings in plugin UI
+- **Filters**: optional tamable-beast-only list + aura/buff name filters (any or all match)
 
 ## Requirements
 
@@ -47,4 +47,5 @@ Third-party plugin — use at your own risk. Read-only overlay; no automation.
 
 | Version | Notes |
 |---------|--------|
+| **1.0.1** | Beast + aura filters (Spirit Walker / Tame Beast farming; DE/EN UI) |
 | **1.0.0** | Initial community GameHelper2 release (fork port, DE/EN UI) |

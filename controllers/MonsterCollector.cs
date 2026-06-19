@@ -101,6 +101,16 @@ internal sealed class MonsterCollector
             var buffs = BuffVisuals.Extract(entity, settings);
             BuffVisuals.PopulateDisplayData(buffs, settings);
 
+            if (settings.OnlyBeasts && !MonsterFilters.IsBeastMonster(entity))
+            {
+                continue;
+            }
+
+            if (!MonsterFilters.PassesAuraFilter(buffs, settings))
+            {
+                continue;
+            }
+
             string name = GetMonsterName(entity) ?? L("Unknown", "Unbekannt");
             float nameWidth = ImGuiTextUtil.MeasureWidth(name, 1.0f);
 
