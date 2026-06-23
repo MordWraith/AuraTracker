@@ -175,7 +175,7 @@ internal sealed class MonsterCollector
         return false;
     }
 
-    private static string GetMonsterName(Entity entity)
+    private static string? GetMonsterName(Entity entity)
     {
         try
         {
