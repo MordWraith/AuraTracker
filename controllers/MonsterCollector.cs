@@ -11,8 +11,6 @@ using GameHelper.RemoteObjects;
 using GameHelper.RemoteObjects.Components;
 using GameHelper.RemoteObjects.States;
 using GameHelper.RemoteObjects.States.InGameStateObjects;
-using static AuraTracker.AuraTrackerLocalization;
-
 namespace AuraTracker.controllers;
 
 internal sealed class MonsterCollector
@@ -111,7 +109,7 @@ internal sealed class MonsterCollector
                 continue;
             }
 
-            string name = GetMonsterName(entity) ?? L("Unknown", "Unbekannt");
+            string name = GetMonsterName(entity) ?? "Unknown";
             float nameWidth = ImGuiTextUtil.MeasureWidth(name, 1.0f);
 
             candidates.Add(new MonsterSnapshot(entity, screen, life, rarity, buffs, name, nameWidth));
